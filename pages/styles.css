@@ -1,0 +1,266 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/* start main CSS */
+
+body {
+    background-color: #000;
+    font-size: 18px;
+    color: #E3FFEC;
+    
+}
+
+header {
+    margin-top: -18px;
+    width: 80%;
+    margin: 0 10%;
+    color: #E3FFEC;
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 2%;
+    text-transform:uppercase;
+}
+
+nav ul li a, a:visited {
+    color:#74A217;
+}
+
+main {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.name {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    line-height:151%;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+}
+
+#hero {
+    height: 20rem;
+    /* background-color: blue;
+    border: 3px solid purple; */
+    background-image: url('./Images/FlorianOlivo.jpg');
+    background-size: cover;
+    margin-top: -7rem;
+}
+
+.hilight {
+    color: #74A217;
+    font-family: copperplate, serif;
+    font-size: 150%;
+}
+
+
+section {
+    background-color:black;
+    color: #E3FFEC;
+}
+
+.leftie {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #74A217;
+    width: 50%;
+}
+
+#orderedList {
+    height: 10rem;
+    width: 75%;
+    margin-left: 25%;
+    column-count: 2;
+    column-fill: balance;
+    display: flex;
+}
+
+#orderedList ol {
+    list-style-type: none;
+}
+
+#orderedList li {
+    padding-top: 1rem;
+}
+
+
+
+/* CAROUSEL STARTS HERE */
+
+.carousel {
+    margin: 3rem auto;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .slides-item {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 100px;
+    height: 300px;
+    justify-content: center;
+    margin: 2rem 1rem;
+    position: relative;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform .5s;
+    width: 50%;
+  }
+
+
+  /* FIRST SLIDER */
+
+  .goButton {
+    background-color:#000;
+    border-radius: 23px; 
+    padding:10px 10px 0 10px;
+    color: #74A217; 
+    margin-top: 19rem;
+    font-size: 3rem;
+    border: 3px solid;
+  }
+
+  .goButton a, a:visited, .slider-nav {
+    color: #74A217; 
+  }
+
+  .slide-1 {
+    background-image: url('./Images/Augur-Azure.png');
+    background-size: contain;
+  }
+
+  .slide-2 {
+    background-image: url('./Images/CareGiversHeart.PNG');
+    background-size: contain;
+  }
+
+  .slide-3 {
+    background-image: url('./Images/Bang-Seafood.png');
+    background-size: contain;
+  }
+
+  .slide-4 {
+    background-image: url('./Images/MY-APP-STAT.PNG');
+    background-size: contain;
+  }
+
+  .slide-5 {
+    background-image: url('./Images/Padgetts.PNG');
+    background-size: contain;
+  }
+
+  /* SECOND SLIDER */
+
+  .slide-6 {
+    background-image: url('./Images/g2-calc.png');
+    background-size: contain;
+  }
+
+  .slide-7 {
+    background-image: url('./Images/NASA-api.png');
+    background-size: contain;
+  }
+
+  .slide-8 {
+    background-image: url('./Images/Countdown.png');
+    background-size: contain;
+  }
+
+  .slide-9 {
+    background-image: url('./Images/MY-APP-STAT.PNG');
+    background-size: contain;
+  }
+
+  .slide-10 {
+    background-image: url('./Images/Padgetts.PNG');
+    background-size: contain;
+  }
+
+
+  
+  .carousel__nav {
+    padding: 1.25rem .5rem;
+  }
+  
+  .slider-nav {
+    align-items: center;
+    background-color: #000;
+    border-radius: 50%;
+    color: #74A217;
+    display: inline-flex;
+    height: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    width: 1.5rem;
+    border: 3px solid;
+  }
+  
+  .slider-nav:hover,
+  .slider-nav:active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .slide-1 {
+    background-color: #fdc;
+  }
+  
+  .slide-2 {
+    background-color: #bfd;
+  }
+  
+  .slide-3 {
+    background-color: #cdf;
+  }
+  
+  .slide-4 {
+    background-color: #dca;
+  }
+  
+  .slide-5 {
+    background-color: #ffc;
+  }
+
+
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 3px solid #74A217;
+  }
